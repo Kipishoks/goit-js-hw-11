@@ -24,7 +24,7 @@ form.addEventListener('submit', onSubmin);
 
 function onSubmin(evt) {
     evt.preventDefault();
-    inputSearch = evt.currentTarget.elements.searchQuery.value;
+    inputSearch = form.searchQuery.value;
     if (!inputSearch.trim() || inputSearch === queryToFetch) {
         gallery.innerHTML = '';
         loadMore.classList.add('unvisible');
