@@ -19,4 +19,4 @@ const fetchData = async (inputSearch, pageSearch) => {
     })
   return data;}
     ;
-export {fetchData }
+export {fetchData,  pageLimit}

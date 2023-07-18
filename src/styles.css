@@ -1,3 +1,61 @@
+
+* {
+    box-sizing: border-box;
+}
+
 .unvisible {
     display: none;
 }
+
+.search-form {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0 20px 0;
+    background: rgba(131, 178, 239, 0.959);
+    box-shadow: 2px 10px 8px 0px rgba(81, 91, 238, 0.68);
+}
+
+
+.gallery {
+    margin-top: 100px;
+}
+
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    
+    }
+
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.photo-card {
+    display: flex;
+    align-items: center;
+}
+
+.info {
+    display: flex;
+    column-gap: 40px;
+  
+}
+
+.info-item {
+    display: flex;
+    gap: 10px;
+
+    flex-wrap: wrap;
+
+
+}
+
+b {font-family: "Lucida Console", "Courier New", monospace;
+color: blue;}

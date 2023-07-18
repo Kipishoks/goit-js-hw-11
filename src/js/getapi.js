@@ -1,7 +1,7 @@
 import { markupImage } from './markup';
 import Notiflix from 'notiflix';
-import { fetchData } from './api';
-import { lightbox, loadMore, gallery} from '../index'
+import { lightbox, loadMore, gallery } from '../index';
+import { fetchData, pageLimit } from './api';
  
 
 
@@ -21,6 +21,9 @@ const getImage = async (inputSearch, pageSearch) => {
     markupImage(data);
     lightbox.refresh();
     loadMore.classList.remove('unvisible');
+        if (data.totalHits <= pageSearch * pageLimit) {
+      loadMore.classList.add('unvisible');
+    };
 
          }
     catch(error) {
